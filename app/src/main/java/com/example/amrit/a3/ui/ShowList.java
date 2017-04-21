@@ -22,6 +22,7 @@ public class ShowList extends BaseActivity {
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
 		super.onCreate( savedInstanceState );
+		setContentView( R.layout.recyler_view );
 		item1 = new ItemListModal( "india",3.14 );
 		item2= new ItemListModal( "japan",4.96 );
 		list.add(item1);
