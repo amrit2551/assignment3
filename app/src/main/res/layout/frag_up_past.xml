@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/displaySelectedItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:gravity="center"
+        android:textSize="@dimen/font_xlarge"
+        android:textStyle="bold" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_medium"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:text="Pending" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:text="accepted" />
+</LinearLayout>
+<android.support.v4.view.ViewPager
+android:id="@+id/vpSwipe"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+</android.support.v4.view.ViewPager>
+
+    </LinearLayout>
